@@ -1,0 +1,25 @@
+.hero{
+    background: black;
+    color: white;
+    padding: 15px;
+}
+.hero-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.buttons-view{
+    width: 150px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.cityWeather{
+    padding: 5px;
+}
+
+#run-search,
+#clear-search{
+    margin-top: 15px;
+}
