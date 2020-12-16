@@ -48,7 +48,7 @@ function displayWeather() {
             newDiv.append(pTwo)
             //Call for humidity (fixed to whole number)
             var humidity = response.main.humidity
-            var pThree = $("<p>").text("Humidity: " + humidity.toFixed(0) + " %");
+            var pThree = $("<p>").text("Humidity: " + humidity.toFixed(0) + "%");
             newDiv.append(pThree)
             //Call for temperature (fixed to whole number)
             var temperature = response.main.temp
@@ -128,11 +128,11 @@ function display5day() {
             $('.day4-icon').attr('src', day4icon);
             $('.day5-icon').attr('src', day5icon);
 
-            $(".day1").html("<br/>" + "<b>" + moment(day1date).format("ddd, MMM Do") + "</b>" + "</br>" + "Temp: " + day1temp + " F </br>" + "Humidity: " + day1hum + " %")
-            $(".day2").html("<br/>" + "<b>" + moment(day2date).format("ddd, MMM Do") + "</b>" + "</br>" + "Temp: " + day2temp + " F </br>" + "Humidity: " + day2hum + " %")
-            $(".day3").html("<br/>" + "<b>" + moment(day3date).format("ddd, MMM Do") + "</b>" + "</br>" + "Temp: " + day3temp + " F </br>" + "Humidity: " + day3hum + " %")
-            $(".day4").html("<br/>" + "<b>" + moment(day4date).format("ddd, MMM Do") + "</b>" + "</br>" + "Temp: " + day4temp + " F </br>" + "Humidity: " + day4hum + " %")
-            $(".day5").html("<br/>" + "<b>" + moment(day5date).format("ddd, MMM Do") + "</b>" + "</br>" + "Temp: " + day5temp + " F </br>" + "Humidity: " + day5hum + " %")
+            $(".day1").html("<br/>" + "<b>" + moment(day1date).format("MM/DD/YYYY") + "</b>" + "</br>" + "Temp: " + day1temp + " F </br>" + "Humidity: " + day1hum + "%")
+            $(".day2").html("<br/>" + "<b>" + moment(day2date).format("MM/DD/YYYY") + "</b>" + "</br>" + "Temp: " + day2temp + " F </br>" + "Humidity: " + day2hum + "%")
+            $(".day3").html("<br/>" + "<b>" + moment(day3date).format("MM/DD/YYYY") + "</b>" + "</br>" + "Temp: " + day3temp + " F </br>" + "Humidity: " + day3hum + "%")
+            $(".day4").html("<br/>" + "<b>" + moment(day4date).format("MM/DD/YYYY") + "</b>" + "</br>" + "Temp: " + day4temp + " F </br>" + "Humidity: " + day4hum + "%")
+            $(".day5").html("<br/>" + "<b>" + moment(day5date).format("MM/DD/YYYY") + "</b>" + "</br>" + "Temp: " + day5temp + " F </br>" + "Humidity: " + day5hum + "%")
         })
 }
 
