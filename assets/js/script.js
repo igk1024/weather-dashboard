@@ -13,7 +13,7 @@ function renderButtons() {
     $(".buttons-view").empty();
     for (var i = 0; i < listOfCities.length; i++) {
         var a = $("<button>");
-        a.addClass("btn btn-defult city-btn");
+        a.addClass("btn btn-default city-btn");
         a.attr("data-name", listOfCities[i]);
         a.text(listOfCities[i]);
         $(".buttons-view").prepend(a);
